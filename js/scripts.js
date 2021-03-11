@@ -30,5 +30,24 @@ $(document).ready(function () {
             $("#slideUpPara").slideUp();
         }
     })
+
+    $("#classFadeOut").click(function () {
+        $("#fadePara").fadeOut("slow");
+    })
+    $("#classFadeIn").click(function () {
+        $("#fadePara").fadeIn("slow");
+    })
+
+    $("#classBefore").click(function () {
+        $("#htmlPara").before("<hr />");
+    })
+    $("#classAfter").click(function () {
+        $("#htmlPara").after("<hr />");
+    })
+
+    $("#classAttr").click(function () {
+        var buttonClass = $("button").attr("class");
+        $("em").text(buttonClass);
+    })
 })
 
