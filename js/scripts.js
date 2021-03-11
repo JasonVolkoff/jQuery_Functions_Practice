@@ -49,5 +49,13 @@ $(document).ready(function () {
         var buttonClass = $("button").attr("class");
         $("em").text(buttonClass);
     })
+
+    $("input").keyup(function () {
+        var value = $(this).val();
+        $("#classValue").text(value);
+    })
+    $("#classValue").click(function () {
+        $("#classValue").text("I lied.");
+    })
 })
 
